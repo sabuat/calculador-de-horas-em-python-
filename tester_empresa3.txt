@@ -1,0 +1,30 @@
+File Tester
+-----
+
+Hora Extra Resonancia Valor = R$ 65.00
+
+1 Hora = R$ 65.00
+30 min = R$ 32.50
+15 min = R$ 16.25
+18 min = R$ 19.50
+
+5:18 = R$ 344.50
+
+Hora Extra Tomografia Valor = R$ 65.00
+
+1 Hora = R$ 65.00
+30 min = R$ 32.50
+15 min = R$ 16.25
+18 min = R$ 19.50
+
+4:18 = R$ 279.50
+
+Hora Extra Mamografia Valor = R$ 50.00
+
+1 Hora = R$ 50.00
+30 min = R$ 25.00
+15 min = R$ 12.50
+18 min = R$ 15.00
+
+2:23 = R$ 119.17
+

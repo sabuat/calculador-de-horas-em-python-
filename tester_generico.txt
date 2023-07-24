@@ -1,0 +1,9 @@
+File Tester
+-----
+
+Hora Extra Valor = R$ 20.00
+
+1 Hora = R$ 20.00
+30 min = R$ 10.00
+15 min = R$  5.00
+18 min = R$ 10.80

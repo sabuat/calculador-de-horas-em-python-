@@ -1,0 +1,21 @@
+File Tester
+-----
+
+Hora Extra Semanal Valor = R$ 125.00
+
+1 Hora = R$ 125.00
+30 min = R$  62.50
+15 min = R$  31.25
+18 min = R$  37.50
+
+5:18 = R$ 662.50
+
+Hora Extra FDS Valor = R$ 130.00
+
+1 Hora = R$ 130.00
+30 min = R$  65.00
+15 min = R$  32.50
+18 min = R$  39.00
+
+4:18 = R$ 559.00
+
