@@ -45,6 +45,12 @@ minutos_hmm = int(input("Ingrese os minutos de Mamografia ou digite 0: "))
 hmm = mod_horas(horas_hmm, minutos_hmm)
 
 horas_extras = horas_extras_total(hrm, htc, hmm)
+horas_extras_trab = horas_hrm + horas_hmm + horas_htc
+minutos_trab = minutos_htc + minutos_hmm + minutos_hrm
+
+if minutos_trab > 60:
+    hh1 = int(minutos_trab / 60)
+    mm1 = int(minutos_trab % 60)
 
 horas_extras_1 = hrm * valor_HE_RM
 horas_extras_2 = htc * valor_HE_TC
@@ -62,10 +68,10 @@ calc_imp_2 = imposto_cont(valor_neto)
 
 liquido = valor_neto - (calc_imp_1 + calc_imp_2)
 
-horas_trabalhadas = int(horas_MM + horas_RM + horas_TC + horas_extras)
+horas_trabalhadas = int(horas_MM + horas_RM + horas_TC + horas_extras_trab + hh1)
 
 print(f'''
-    Horas trabalhadas no mes {horas_trabalhadas}
+    Horas trabalhadas no mes {horas_trabalhadas}{":"}{mm1}
     Total de Horas extras R$ {horas_extras: .2f}
     Horas Extras Resonancia R$ {horas_extras_1: .2f}
     Horas Extras Tomografia R$ {horas_extras_2: .2f}
