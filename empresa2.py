@@ -1,4 +1,4 @@
-valor_fixo = 53838.85
+valor_fixo = 58838.85
 valor_HE_SEM = 125.00
 valor_HE_FDS = 130.00
 
@@ -34,6 +34,13 @@ horas_hrf = int(input("Ingrese as horas extras de Final de Semana sem os minutos
 minutos_hrf = int(input("Ingrese os minutos de Final de Semana ou digite 0: "))
 hrf = mod_horas(horas_hrf, minutos_hrf)
 
+horas_trabalhadas = int(horas_hrf + horas_hrs)
+minutos_trab = minutos_hrs + minutos_hrf
+
+if minutos_trab > 60:
+    hh1 = int(minutos_trab / 60)
+    mm1 = int(minutos_trab % 60)
+
 horas_extras_1 = horas_extras_semanais(hrs)
 horas_extras_2 = horas_extras_sabatinas(hrf)
 horas_extras = horas_extras_1 + horas_extras_2 
@@ -46,10 +53,10 @@ calc_imp_2 = imposto_cont(valor_neto)
 
 liquido = valor_neto - (calc_imp_1 + calc_imp_2)
 
-horas_trabalhadas = int(hrs + hrf)
+htotal = horas_trabalhadas + hh1
 
 print(f'''
-    Total horas extras trabalhadas no mes {horas_trabalhadas: .2f}
+    Total horas extras trabalhadas no mes {htotal}{":"}{mm1}
     Total de Horas extras semanais R$ {horas_extras_1: .2f}
     Total de Horas extras sabatinas R$ {horas_extras_2: .2f}
     Valor Bruto R$ {valor_neto: .2f}
