@@ -36,12 +36,12 @@ calc_imp_2 = imposto_cont(valor_neto)
 
 liquido = valor_neto - (calc_imp_1 + calc_imp_2)
 
-horas_trabalhadas = int(horas_fixas + hrm)
+horas_trabalhadas = int(horas_fixas + horas)
 
 print(f'''
-    Horas trabalhadas no mes {horas_trabalhadas}
-    Total de Horas extras R$ {horas_extras}
-    Valor Bruto R$ {valor_neto}
+    Horas trabalhadas no mes {horas_trabalhadas}{":"}{minutos}
+    Total de Horas extras R$ {horas_extras: .2f}
+    Valor Bruto R$ {valor_neto: .2f}
     Imposto Art. 647 R$ {calc_imp_1: .2f}
     Imposto Contable R$ {calc_imp_2: .2f}
     Valor liquido R$ {liquido: .2f}
